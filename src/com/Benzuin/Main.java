@@ -68,7 +68,7 @@ public class Main {
         WebElement continueButton = driver.findElement(By.id("button-register"));
         continueButton.click();
 //        continue delivery details
-//        error start with NoSuchElementException
+//        error start with NoSuchElementException for "WebElement existing"
 
         WebElement existing = new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//input[@value='existing']"))));
         existing.click();
@@ -89,6 +89,6 @@ public class Main {
 //        confirm order
         WebElement buttonConfirmOrder = driver.findElement(By.id("button-confirm"));
         buttonConfirmOrder.click();
-        
+
     }
 }
